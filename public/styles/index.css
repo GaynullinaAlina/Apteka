@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'RodchenkoCTT';
+  src: url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.eot');
+  src: url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.eot?#iefix') format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.woff2') format('woff2'), url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.woff') format('woff'),
+    url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.ttf') format('truetype'),
+    url('https://db.onlinewebfonts.com/t/7d0f9e68e93ccadf3ad2035d63c4f348.svg#RodchenkoCTT') format('svg');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'RodchenkoCTT';
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  /* background-color: antiquewhite; */
+  /* background-image: url('/media/ricepaper-bg.jpg'); */
+}
+
+.navbar-link {
+  background-color: #d24a4a;
+  margin: 0px;
+  padding: 0px;
+  font-size: xx-large !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formLog,
+.formReg {
+  text-align: center;
+}
+
+.nav-link div {
+  color: #d24a4a;
+  padding-left: 4px;
+  font-size: larger;
+}
+
+/* .drug-card * {
+  border: 1px solid red;
+} */
+.drugs-container,
+.free-drugs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-evenly;
+  background: url(/media/ricepaper-bg.jpg);
+  padding: 20px;
+}
+
+.drug-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  border: 2px solid rgb(206, 206, 206);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.drug-card-price {
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.drug-card-price-discount,
+.drug-card-price-old {
+  display: flex;
+  flex-direction: column;
+}
+
+.drug-card-price-discount-span {
+  font-weight: bold;
+  font-size: 30px;
+  color: #d24a4a;
+}
+
+.drug-card-price-footer {
+  color: gray;
+  font-size: 22px;
+}
+
+.drug-card-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.drug-card-img-wrapper img {
+  height: 200px;
+  max-width: 200px;
+  object-fit: contain;
+  transition: 0.4s;
+}
+
+.drug-card-img-wrapper:hover img {
+  transform: scale(1.2);
+}
+
+.drug-card-discount {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgb(255, 145, 0);
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+.drug-card-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.drug-quantity-span {
+  font-size: 20px;
+  color: gray;
+}
+
+.drug-order-button {
+  border-radius: 20px;
+  border: 2px solid rgb(117, 0, 0);
+  background-color: white;
+}
+
+.calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.calendar-next-week {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.week-info {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.free-drug-span {
+  font-size: 27px;
+  color: #d24a4a;
+}

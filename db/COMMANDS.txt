@@ -1,0 +1,66 @@
+npx sequelize-cli model:generate --name User --attributes login:string,email:string,password:string
+
+npx sequelize-cli model:generate --name Card --attributes cardUserId:integer,cardTitle:string,cardContent:text
+
+
+
+
+npx sequelize-cli model:generate --name Drug --attributes drugTitle:string,drugDescription:text,drugQuantity:integer,drugPrice:integer,drugDiscount:integer,drugImageLink:text,drugRating:integer,drugIsFree:boolean
+npx sequelize-cli model:generate --name Order --attributes orderUserId:integer,orderDrugId:integer,orderQuantity:integer
+npx sequelize-cli model:generate --name Week --attributes drugIdOne:integer,drugIdTwo:integer,drugIdThree:integer
+
+npx sequelize-cli seed:generate --name seedUsers
+npx sequelize-cli seed:generate --name seedDrugs
+npx sequelize-cli seed:generate --name seedCalendar
+
+Order:
+
+orderUserId
+orderDrugId
+orderQuantity
+
+Drug:
+
+drugTitle
+drugDescription
+drugQuantity
+drugPrice
+drugDiscount
+drugImageLink
+drugRating
+drugIsFree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+itemArtInput
+itemTitleInput
+itemDescriptionInput
+
+itemPhotoLinkInput
+itemPriceInput
+itemQuantityInput
+
+
+npx sequelize-cli model:generate --name Item --attributes itemUserId:integer,itemArt:string,itemTitle:string,itemDescription:text,itemPhotoLink:string,itemPrice:integer,itemQuantity:integer
+npx sequelize-cli model:generate --name UserOrder --attributes orderUserId:integer,orderItemId:integer,orderItemQuantity:integer 
+
+
